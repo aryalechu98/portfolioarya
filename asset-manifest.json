@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/portfolioarya/static/css/main.b85b7fad.css",
-    "main.js": "/portfolioarya/static/js/main.37ee2704.js",
+    "main.js": "/portfolioarya/static/js/main.df0feaea.js",
     "static/js/787.b2e1b36e.chunk.js": "/portfolioarya/static/js/787.b2e1b36e.chunk.js",
     "static/media/ecomm.png": "/portfolioarya/static/media/ecomm.5ab69d4a748a674b6b9c.png",
     "static/media/aryaresume.pdf": "/portfolioarya/static/media/aryaresume.52a03f49f193b5013329.pdf",
     "static/media/tic.png": "/portfolioarya/static/media/tic.49e5136ac345b2014e29.png",
     "index.html": "/portfolioarya/index.html",
     "main.b85b7fad.css.map": "/portfolioarya/static/css/main.b85b7fad.css.map",
-    "main.37ee2704.js.map": "/portfolioarya/static/js/main.37ee2704.js.map",
+    "main.df0feaea.js.map": "/portfolioarya/static/js/main.df0feaea.js.map",
     "787.b2e1b36e.chunk.js.map": "/portfolioarya/static/js/787.b2e1b36e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b85b7fad.css",
-    "static/js/main.37ee2704.js"
+    "static/js/main.df0feaea.js"
   ]
 }
