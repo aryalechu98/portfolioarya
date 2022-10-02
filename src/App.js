@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { useSelector } from 'react-redux'
+import Contact from './components/Contact'
+import Education from './components/Education/Education'
+import Intro from './components/Intro/Intro'
 
-function App() {
+import Navbar from './components/Navbar'
+import Project from './components/Project/Project'
+import Skills from './components/Skills/Skills'
+
+
+const App = () => {
+  const isDark=useSelector(state=>state.toggle.isDark)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{background:isDark ? 'black':'#fff',color:isDark?'#fff':'black'}}>
+      <Navbar/>
+      <Intro/>
+      <Skills/>
+      <Education/>
+      <Project/>
+      <Contact/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
