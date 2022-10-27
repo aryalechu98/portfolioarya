@@ -35,7 +35,8 @@ const useStyles=makeStyles((theme)=>({
     link:{
         marginRight:20,
         cursor:'pointer',
-        color:'#EAD4D2'
+        color:'#fff',
+        fontWeight:'bold'
     },
     icon:{
         position:'absolute',
@@ -67,12 +68,12 @@ const Navbar = () => {
         dispatch(toggleActions.setDark())
     }
   return (
-    <AppBar position='sticky' style={{background :'#4B1B1B',color:'#EAD4D2'}} >
+    <AppBar position='sticky' style={{background :'#023047',color:'#fff'}} >
     <Container maxWidth='md'>
         <Toolbar>
         <div className={styles.navLeft} id='/' >
         
-            <Typography style={{display:'flex',fontWeight:'bold'}} ><span className={styles.span} style={{color:'#D99255'}}>A</span><span>R</span></Typography>
+            <Typography style={{display:'flex',fontWeight:'bold'}} ><span className={styles.span} style={{color:'#fb8500'}}>A</span><span>R</span></Typography>
         
         </div>
         <Hidden xsDown>
@@ -81,7 +82,7 @@ const Navbar = () => {
            
                 <div>
                     <Link key={item.href}
-                    color='#EAD4D2'
+                    color='#219ebc'
                     variant='button'
                     underline='none'
                     className={styles.link}
@@ -99,7 +100,7 @@ const Navbar = () => {
                         {isDark && <ToggleOnOutlinedIcon/>}
                     </div>
         <Hidden smUp>
-            <IconButton style={{color:'#EAD4D2'}}>
+            <IconButton style={{color:'#219ebc'}}>
                 <MenuIcon onClick={()=>setOpen(true)}/>
             </IconButton>
         </Hidden>
@@ -110,7 +111,7 @@ const Navbar = () => {
     position='relative' anchor='right' open={open} onOpen={()=>setOpen(true)} onClose={()=>setOpen(false)}>
         <div className={styles.icon}  >
             <IconButton>
-                <ChevronRightIcon style={{color:'#4B1B1B'}} onClick={()=>setOpen(false)}/>
+                <ChevronRightIcon style={{color:'#023047'}} onClick={()=>setOpen(false)}/>
             </IconButton>
         </div>
         <div className="divider">
@@ -123,7 +124,7 @@ const Navbar = () => {
         {navigationLinks.map((item)=>(
             <ListItem>
             <Link key={item.href} 
-            style={{color:'#4B1B1B'}}
+            style={{color:'#023047'}}
             href={item.href}
             variant='button'
             underline='none'

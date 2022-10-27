@@ -15,15 +15,15 @@ section:{
   // // marginBottom:'10rem',
   // width:'100%',
   padding:'5rem 2rem',
-  color:'#4B1B1B',
+  color:'#fff',
   
-  // background:'#C18888',
+  background:'#219ebc',
 },
 darkMode:{
   // marginTop:'5rem',
   // marginBottom:'10rem',
   color:'#fff',
-  background:'#C18888',
+  background:'#023047',
   paddingTop:'5rem',
   paddingBottom:'5rem',
 

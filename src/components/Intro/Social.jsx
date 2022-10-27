@@ -17,7 +17,7 @@ const Social = ({direction}) => {
         <Grid item>
             <Link href={item.url}>
             <IconButton>
-                <item.icon style={{color:'#4B1B1B'}}/>
+                <item.icon style={{color:'#023047'}}/>
             </IconButton>
             </Link>
         </Grid>

@@ -20,17 +20,17 @@ flexWrap:'wrap',
 
 justifyContent:"center",
 alignItems:"center",
-color:'#4B1B1B'
+color:'#fff',
+background:'#219ebc',
 },
 darkMode:{
   padding:'2rem 0',
 height:'100vh',
 display:'flex',
 flexWrap:'wrap',
-
 justifyContent:"center",
 alignItems:"center",
-background:'#C18888'
+background:'#023047'
 
 },
 

@@ -10,6 +10,7 @@ import IconButton from '@material-ui/core/IconButton'
 import {useSelector} from 'react-redux'
 import Hidden from '@material-ui/core/Hidden'
 import TagContainer from './TagContainer'
+import { style } from '@mui/system'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -17,18 +18,19 @@ const useStyles = makeStyles((theme) => ({
       width: 380,
       height:'auto',
       objectFit:'cover'
+
     },
     card: {
       display: "flex",
       padding:'2rem 0',
-      color:'#4B1B1B',
+      color:'#219ebc',
 
       
     },
     darkMode:{
         display: "flex",
       padding:'2rem 0',
-      color:'#4B1B1B',
+      color:'#023047',
 
     },
     links: {
@@ -39,6 +41,13 @@ const useStyles = makeStyles((theme) => ({
       marginRight: 5,
       marginBottom: 5,
     },
+    white:{
+      color:'#023047'
+    },
+    dark:{
+      color:'#219ebc'
+
+    }
   }));
   
   
@@ -52,7 +61,9 @@ const useStyles = makeStyles((theme) => ({
         <Card className={isDark?styles.darkMode:styles.card}>
           <div>
             <CardContent>
-              <Typography variant="h5" paragraph>
+              <Typography variant="h5" 
+              style={{fontWeight:'bold',fontSize:'1.5rem'}}
+              paragraph>
                 {title}
               </Typography>
               <Typography variant="subtitle1" paragraph>
@@ -65,7 +76,7 @@ const useStyles = makeStyles((theme) => ({
             <CardActions>
               <div className={styles.links}>
                 {links.map((linkItem) => (
-                  <IconButton style={{color:'#4B1B1B'}} href={linkItem.href} key={linkItem.href}>
+                  <IconButton className={isDark?styles.white:styles.dark} href={linkItem.href} key={linkItem.href}>
                     <linkItem.icon />
                   </IconButton>
                 ))}

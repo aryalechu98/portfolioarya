@@ -17,7 +17,7 @@ section:{
 background:'#fff'
 },
 darkMode:{
-  background:'#EAD4D2'
+  background:'#219ebc'
 }
 })
 const Contact = () => {
@@ -52,12 +52,12 @@ const Contact = () => {
        padding={3}
        borderRadius={5}
        maxWidth={400}
-       boxShadow={'5px 5px 10px #ccc'}
+       boxShadow={'3px 3px 5px #ccc'}
        sx={{
         color:'#4B1B1B',
         background:'#fff',
         ':hover':{
-           boxShadow:'10px 10px 20px #ccc'
+           boxShadow:'5px 5px 8px #ccc'
 
        }}}
        >
@@ -65,6 +65,7 @@ const Contact = () => {
             variant='h3' 
             padding={3} 
             textAlign={'center'}
+            sx={{color:'#023047'}}
             >
            Get In Touch 
            </Typograpghy>
@@ -87,7 +88,7 @@ const Contact = () => {
                
                type='submit'
                variant='contained' sx={{
-                   background:'#D99255',
+                   background:'#023047',
                    transition:'all 0.5s ease',
                    borderRadius:3,
                    marginTop:'1rem',
@@ -100,14 +101,10 @@ const Contact = () => {
                    gap:'0.5rem',
                    textDecoration:'none',
                    color:'white',
-                   fontWeight:'bold',
-                   display:'flex',
-                   justifyContent:'space-between',
-                   gap:'10px',
-                                    
+                       
                    ':hover':{
                        background:'white',
-                       color:'#D99255',
+                       color:'#023047',
                        transform:'scale(1.03)'
                    }
                }}>Send

@@ -17,13 +17,16 @@ import {useSelector} from 'react-redux'
 const useStyles=makeStyles(theme=>({
     section:{
        position:'relative',
-       padding:'2rem '
+       padding:'2rem ',
+       background:'#fff',
+       color:"#023047"
+
     },
     darkMode:{
         position:'relative',
         padding:'2rem ',
-        background:'#EAD4D2',
-        color:'#4B1B1B'
+        background:'#8ecae6',
+        color:'#023047'
     },
     content:{
         
@@ -67,7 +70,9 @@ const Education = () => {
             <Container maxWidth='md' >
                 <Grid className={styles.content} container alignItems='center' justifyContent='space-between'>
                     <Grid item sm={8}>
-                    <Typography component='h1' variant='h3'>
+                    <Typography component='h1' variant='h3'
+                    sx={{textAlign:'left'}}
+                    >
                         Education
                     </Typography>
                     <Timeline className='timeline'>
