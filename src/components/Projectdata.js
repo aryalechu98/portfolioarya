@@ -23,7 +23,7 @@ const projectsData = [
       ],
     },
     {
-      title: "Quiz App",
+      title: "TicTacToe Game",
       description:
         "A responsive TickTacToe Game which supports both desktop and mobile view, styled using styled-components and deployed of surge.sh ",
       imageAlt: "quiz ",
